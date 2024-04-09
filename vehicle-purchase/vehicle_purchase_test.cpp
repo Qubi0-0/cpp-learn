@@ -11,7 +11,7 @@ TEST_CASE("need a license for a car", "[task_1]") {
     REQUIRE(vehicle_purchase::needs_license(kind));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
+// #if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("need a license for a truck", "[task_1]") {
     std::string kind{"truck"};
@@ -103,4 +103,4 @@ TEST_CASE("float price is reduced to 70% for age 8,", "[task_3]") {
     REQUIRE_THAT(vehicle_purchase::calculate_resell_price(original_price, age), Catch::Matchers::WithinRel(expected, 0.001));
 }
 
-#endif
+// #endif

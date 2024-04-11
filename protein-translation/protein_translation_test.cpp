@@ -16,7 +16,7 @@ TEST_CASE("Methionine_RNA_sequence")
     REQUIRE(vector<string>{"Methionine"} == protein_translation::proteins("AUG"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
+// #if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Phenylalanine_RNA_sequence_1")
 {
@@ -131,4 +131,4 @@ TEST_CASE("Translation_stops_if_STOP_codon_in_middle_of_six-codon_sequence")
                         == protein_translation::proteins("UGGUGUUAUUAAUGGUUU"));
 }
 
-#endif // !EXERCISM_RUN_ALL_TESTS
+// #endif // !EXERCISM_RUN_ALL_TESTS

@@ -10,7 +10,7 @@ TEST_CASE("single digit strings can not be valid", "[792a7082-feb7-48c7-b88b-bbf
 	REQUIRE(false == luhn::valid("1"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
+// #if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("a single zero is invalid", "[698a7924-64d4-4d89-8daa-32e1aadc271e]") {
 	REQUIRE(false == luhn::valid("0"));
@@ -96,4 +96,4 @@ TEST_CASE("non-numeric, non-space char in the middle with a sum that's divisible
 	REQUIRE(false == luhn::valid("59%59"));
 }
 
-#endif
+// #endif

@@ -2,10 +2,6 @@
 
 namespace reverse_string {
     std::string reverse_string(std::string word) {
-        std::string reversed;
-        for (int i=word.length() -1; i >= 0; i--) {
-            reversed.push_back(word[i]);
-        }
-        return reversed;
+        return std::string(rbegin(word), rend(word));
     }
-}  // namespace reverse_string
+} 
